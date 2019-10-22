@@ -1,18 +1,5 @@
 <template>
   <section>
-    <header class="container">
-      <section>
-        <h1>cody confer</h1>
-      </section>
-    </header>
-    <nav class="container">
-      <b-nav>
-        <b-nav-item active>Active</b-nav-item>
-        <b-nav-item>Link</b-nav-item>
-        <b-nav-item>Another Link</b-nav-item>
-        <b-nav-item disabled>Disabled</b-nav-item>
-      </b-nav>
-    </nav>
     <nuxt />
   </section>
 </template>
@@ -31,6 +18,7 @@ $light-background: #fff
 $light-foreground: #1c2532
 $light-foreground-blue: #0194ef
 $light-foreground-green: #4fcf3f
+$light-cursor-color: rgba(28,37,50,0.8)
 
 /* dark mode */
 $dark-background-highlight: #283243
@@ -38,18 +26,15 @@ $dark-background: #1c2532
 $dark-foreground: #fff
 $dark-foreground-blue: #26c2c9
 $dark-foreground-green: #96bf47
+$dark-cursor-color: rgba(255,255,255,0.8)
 
 /* colors */
-// $main-background: $light-background
-// $main-foreground: $light-foreground
-// $main-background-highlight: $light-background-highlight
-// $main-foreground-highlight: $light-foreground-blue
-// $main-foreground-hover: $light-foreground-green
 $main-background: $dark-background
 $main-foreground: $dark-foreground
 $main-background-highlight: $dark-background-highlight
 $main-foreground-highlight: $dark-foreground-blue
-$main-foreground-hover: $dark-foreground-green
+$main-foreground-active: $dark-foreground-green
+$main-cursor-color: $dark-cursor-color
 
 html, body
   font-family: $body-font, sans-serif
@@ -57,13 +42,24 @@ html, body
   background: $main-background
   color: $main-foreground
 
-header
-  max-height: 150px
+.nav-link
+  color: $main-foreground-highlight
+  &:hover
+    color: $main-foreground-active
+  &.active
+    color: $main-foreground-active
+
+.site-header-highlight
+  color: $main-foreground-highlight 
+
+.site-heading-cursor
+  color: $main-cursor-color
 
 main
   margin: 0 auto
   min-height: 100vh
   display: grid
+  grid-template-rows: 150px auto auto
   justify-content: center
   align-items: center
   text-align: left
@@ -75,22 +71,16 @@ main
   align-items: left
   text-align: left
 
-.short
-  max-height: 100px
-
-.nav-link
-  padding: 10px 40px 10px 0
-  font-family: $link-font, sans-serif
-  color: $main-foreground-highlight
-  &:hover
-    color: $main-foreground-hover
+.hide
+  display: none
+  visibility: hidden
 
 h1, h2, h3, h4, h5, h6 
   font-family: $heading-font, sans-serif
 
 h1 
   font-size: 2.6em
-  margin: 1.8em 0
+  margin: 1.6em 0
 
 h2
   font-size: 2em

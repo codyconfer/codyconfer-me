@@ -91,5 +91,5 @@ sw.*
 # Vim swap files
 *.swp
 
-.lock
+*.lock
 *-lock.json

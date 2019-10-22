@@ -11,7 +11,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Quicksand|Roboto+Mono|Titillium+Web&display=swap" rel="stylesheet' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Quicksand|Roboto+Mono|Titillium+Web|Share+Tech+Mono&display=swap" rel="stylesheet' },
     ],
   },
   loading: { color: '#fff' },
@@ -19,6 +19,7 @@ export default {
     { src: '~/node_modules/highlight.js/styles/dracula.css', lang: 'css' }
   ],
   plugins: [
+    '~/plugins/vue-rx',
   ],
   buildModules: [
   ],
