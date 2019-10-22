@@ -122,8 +122,12 @@ pre code
   display: block
   font-family: $mono-font, monospace
   font-size: .8em
+  font-weight: 400
   margin: 3em
   padding: 1.2em
   background-color: $main-background-highlight
   color: $main-foreground
+
+.hljs-keyword, .hljs-title
+  font-weight: 400
 </style>
