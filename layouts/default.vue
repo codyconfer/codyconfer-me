@@ -112,18 +112,22 @@ h6
   font-size: 1em
   margin: 1em 0
 
-.feature
+blockquote
   font-family: $feature-font, sans-serif
   font-size: 1.4em
   margin: 1em
   padding: 1em
 
-.code
+pre code
   display: block
   font-family: $mono-font, monospace
   font-size: .8em
+  font-weight: 400
   margin: 3em
   padding: 1.2em
   background-color: $main-background-highlight
+  color: $main-foreground
 
+.hljs-keyword, .hljs-title
+  font-weight: 400
 </style>
