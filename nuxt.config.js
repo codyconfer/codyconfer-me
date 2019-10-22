@@ -1,9 +1,6 @@
 
 export default {
   mode: 'spa',
-  /*
-  ** Headers of the page
-  */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -17,32 +14,19 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Fira+Code|Fira+Sans|Nunito|Oswald|Quicksand|Roboto|Roboto+Condensed|Roboto+Mono|Source+Code+Pro|Teko|Titillium+Web&display=swap" rel="stylesheet' },
     ],
   },
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
   css: [
+    { src: '~/node_modules/highlight.js/styles/dracula.css', lang: 'css' }
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
   ],
-  /*
-  ** Nuxt.js dev-modules
-  */
   buildModules: [
   ],
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/markdownit',
   ],
   /*
   ** Axios module configuration
@@ -50,13 +34,13 @@ export default {
   */
   axios: {
   },
-  /*
-  ** Build configuration
-  */
+  markdownit: {
+    injected: true,
+    use: [
+      'markdown-it-highlightjs',
+    ],
+  },
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend (config, ctx) {
     }
   }
