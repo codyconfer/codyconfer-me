@@ -5,12 +5,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import Info from '~/components/info.md'
 
 export default {
   components: {
-    Logo,
     Info,
   },
   computed: {
