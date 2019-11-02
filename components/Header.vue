@@ -82,8 +82,6 @@ export default {
     display: none
     visibility: none
 
-.site-header-first
-
 .site-heading-cursor
   font-size: 0.8em
   margin: auto 10px 8px 10px

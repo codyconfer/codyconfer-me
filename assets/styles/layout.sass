@@ -1,29 +1,33 @@
 @import 'responsive-breaks.sass'
 
 header
-  margin: 50px 0 0 0
+  margin: 1rem 0 0 0
   grid-template-row: auto
+
+nav
+  margin: 0 0 2rem 0
+
+header, main, footer
   grid-template-columns: minmax(0, 1280px)
 
-.site-header-content
-  width: minmax(750px, 1280px)
-
-.nav-link
-  padding: 10px 40px 10px 0
-  @media #{$is-phone}
-    padding: 30px 50px 30px 0
+.site-header-content, .site-footer-content, main
+  width: minmax(0, 1280px)
 
 main
   margin: 0 auto
   min-height: 100vh
   display: grid
-  grid-template-rows: 150px auto auto
-  grid-template-columns: minmax(0, 1280px)
+  grid-template-rows: 150px auto auto 50px
   justify-content: center
   align-items: center
   text-align: left
   @media #{$is-phone}
     grid-template-rows: 125px auto auto
+
+.nav-link
+  padding: 10px 40px 10px 0
+  @media #{$is-phone}
+    padding: 30px 50px 30px 0
 
 .container
   margin: 0 auto
@@ -51,19 +55,14 @@ blockquote
 
 pre code
   display: block
-  margin: 3rem
-  padding: 1.2rem
+  margin: 1rem 1.3rem 1rem 0
+  padding: 1rem
   @media #{$is-phone}
     margin: 0.5rem 0
     padding: 0.5rem
 
-h1 
-  margin: 1.6rem 0
-  @media #{$is-phone}
-    margin: 1.2rem 0
-
-h2
-  margin: 1.6rem 0
+h1, h2
+  margin: 1.8rem 0
   @media #{$is-phone}
     margin: 1.2rem 0
 
@@ -75,8 +74,9 @@ h3
 h4
   margin: 1.2rem 0
 
-h5
+h5, h6
   margin: 1rem 0
 
-h6
-  margin: 1rem 0
+footer
+  display: grid
+  margin: 1rem 1.3rem
