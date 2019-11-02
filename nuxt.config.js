@@ -14,7 +14,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Quicksand|Roboto+Mono|Titillium+Web|Share+Tech+Mono&display=swap" rel="stylesheet' },
     ],
   },
-  loading: { color: '#fff' },
+  loading: { color: '#1c2532' },
   css: [
     { src: '~/node_modules/highlight.js/styles/dracula.css', lang: 'css' },
     { src: '~/assets/styles/responsive-breaks.sass', lang: 'sass' },
