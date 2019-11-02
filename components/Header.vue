@@ -6,8 +6,9 @@
             <span class="hide-mobile">
               cody@
             </span>
-            <span class="site-header-title">
-              codyconfer.me
+            <span class="site-header-title-container">
+              <span class="hide-desktop mobile-header-carrot">></span>
+              <span class="site-header-title">codyconfer.me</span>
             </span>
           </span>
           <span class="site-header-location-container hide-mobile">
@@ -61,24 +62,20 @@ export default {
 <style lang="sass">
 .site-header-text
   display: grid
-  align-items: center
   grid-template-columns: auto auto auto
   justify-content: left
-  @media #{$is-phone}
+  @media #{$is-mobile}
     grid-template-columns: auto
 
 .site-header-title-container
   display: grid
-  justify-content: left
+  align-items: center
   grid-template-columns: auto auto
-  @media #{$is-phone}
-    grid-template-columns: auto
-    margin-left: -5px
 
 .site-header-location-container
   display: grid
   grid-template-columns: auto auto auto
-  @media #{$is-phone}
+  @media #{$is-mobile}
     display: none
     visibility: none
 
