@@ -1,5 +1,5 @@
 {
-  "name": "codyconfer-me",
+  "name": "codyconfer.me",
   "version": "1.0.0",
   "description": "portfolio site",
   "author": "codyconfer",
@@ -14,6 +14,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/markdownit": "^1.2.7",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0",
     "markdown-it-highlightjs": "^3.0.0",

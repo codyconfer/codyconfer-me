@@ -2,24 +2,24 @@
   <main class="container">
     <siteHeader></siteHeader>
     <siteNav></siteNav>
-    <section class="content" v-html="info"></section>
+    <section class="content" v-html="loremIpsum"></section>
   </main>
 </template>
 
 <script>
 import SiteHeader from '~/components/siteHeader.vue'
 import SiteNav from '~/components/siteNav.vue'
-import Info from '~/components/info.md'
+import LoremIpsum from '~/blog/loremIpsum.md'
 
 export default {
   components: {
-    Info,
+    LoremIpsum,
     SiteHeader,
     SiteNav
   },
   computed: {
-      info() {
-        return Info;
+      loremIpsum() {
+        return LoremIpsum;
       }
     }
 }
