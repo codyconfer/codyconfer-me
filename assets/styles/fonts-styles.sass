@@ -2,60 +2,79 @@
 @import 'responsive-breaks'
   
 html, body
-  font-family: $body-font, sans-serif
+  font-family: $body-font, $body-fallback
   font-size: 1rem
 
 .site-header-text
-  font-family: $header-font, monospace;
+  font-family: $header-font, $header-fallback
 
 .nav-link
-  font-family: $nav-font, sans-serif
+  font-family: $header-font, $header-fallback
+
+.nav-link
+  font-family: $header-font, $header-fallback
+
+.nav-link
+  font-family: $header-font, $header-fallback
+  
+a
+  font-family: $feature-font, $feature-fallback
 
 a, .nav-link
   &:hover
     text-decoration: none
 
+nav > ul > li > a
+  font-family: $header-font, $header-fallback
+
+.mobile-header-carrot
+  font-size: 3rem
+  margin: 3px 15px 0 0
+  font-family: $header-font, $header-fallback
+
 blockquote
-  font-family: $feature-font, sans-serif
+  font-family: $feature-font, $feature-fallback
   font-size: 1.4rem
 
 pre code
-  font-family: $mono-font, monospace
+  font-family: $code-font, $code-fallback
   font-size: 0.8rem
   font-weight: 400
-  @media #{$is-phone}
+  @media #{$is-mobile}
     font-size: 0.55rem
 
 .hljs-keyword, .hljs-title
   font-weight: 400
 
 h1, h2, h3, h4, h5, h6 
-  font-family: $heading-font, sans-serif
+  font-family: $heading-font, $heading-fallback
 
 h1 
-  font-size: 2.6rem
-  @media #{$is-phone}
+  font-size: 3rem
+  @media #{$is-mobile}
     font-size: 2rem
 
 h2
-  font-size: 2rem
-  @media #{$is-phone}
-    font-size: 1.5rem
+  font-size: 2.5rem
+  @media #{$is-mobile}
+    font-size: 1.8rem
 
 h3
-  font-size: 1.6rem
-  @media #{$is-phone}
-    font-size: 1.3rem
+  font-size: 2rem
+  @media #{$is-mobile}
+    font-size: 1.5rem
 
 h4
-  font-size: 1.4rem
-  @media #{$is-phone}
-    font-size: 1.2rem
+  font-size: 1.75rem
+  @media #{$is-mobile}
+    font-size: 1.4rem
 
 h5
-  font-size: 1.2rem
-  @media #{$is-phone}
-    font-size: 1.1rem
+  font-size: 1.5rem
+  @media #{$is-mobile}
+    font-size: 1.2rem
 
 h6
-  font-size: 1rem
+  font-size: 1.25rem
+  @media #{$is-mobile}
+    font-size: 1.2rem

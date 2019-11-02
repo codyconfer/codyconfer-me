@@ -1,11 +1,26 @@
 @import 'responsive-breaks.sass'
 
+html, body
+  min-height: 100vh;
+
 header
   margin: 1rem 0 0 0
   grid-template-row: auto
 
 nav
   margin: 0
+  display: grid
+  min-width: 100%
+
+nav > ul 
+  display: grid
+  min-width: 100%
+
+nav > ul > li
+  display: grid
+  justify-content: center
+  @media #{$is-mobile}
+    width: 25%
 
 header, main, footer
   grid-template-columns: minmax(0, 1280px)
@@ -17,70 +32,97 @@ main
   margin: 0 auto
   min-height: 100vh
   display: grid
-  grid-template-rows: 150px auto auto 50px
+  grid-template-rows: 15vh auto 1fr 5vh
   justify-content: center
-  align-items: center
+  align-content: start
   text-align: left
-  @media #{$is-phone}
-    grid-template-rows: 125px auto auto
 
 .nav-link
-  padding: 10px 40px 10px 0
-  @media #{$is-phone}
-    padding: 30px 50px 30px 0
+  padding: 0 4vh 0 0
+  @media #{$is-mobile}
+    padding: 0 3vh 0 0
+    margin: 3vh 0 0 0
 
 .container
   margin: 0 auto
   display: grid
   justify-content: left
+  align-items: start
   text-align: left
   max-width: 1280px
 
+.content
+  margin: 2rem 0
+  @media #{$is-mobile}
+    margin: 0
 .hide
   display: none
   visibility: hidden
 
 .hide-mobile
-  @media #{$is-phone}
+  @media #{$is-mobile}
     display: none
     visibility: hidden
 
+.hide-desktop
+  display: none
+  visibility: hidden
+  @media #{$is-mobile}
+    display: grid
+    visibility: visible
+
+.hide-desktop-block
+  display: none
+  visibility: hidden
+  @media #{$is-mobile}
+    display: block
+    visibility: visible
+
 blockquote
   max-width: 100%
-  margin: 1rem
-  padding: 1rem
-  @media #{$is-phone}
-    margin: 0.5rem
-    padding: 0.5rem
+  margin: 1vh
+  padding: 1vh
+  @media #{$is-mobile}
+    margin: 0.5vh
+    padding: 0.5vh
 
 pre code
   display: block
-  margin: 1rem 1.3rem 1rem 0
-  padding: 1rem
-  @media #{$is-phone}
-    margin: 0.5rem 0
-    padding: 0.5rem
+  margin: 1vh 1.3vh 1vh 0
+  padding: 1vh
+  @media #{$is-mobile}
+    margin: 0.5vh 0
+    padding: 0.5vh
 
-h1, h2
-  margin: 1.6em 0
-  @media #{$is-phone}
-    margin: 1.2em 0
+h1
+  margin: 4vh 0
+  @media #{$is-mobile}
+    margin: 3vh 0
+
+h2
+  margin: 3.5vh 0
+  @media #{$is-mobile}
+    margin: 2.75vh 0
 
 h3
-  margin: 1.4em 0
-  @media #{$is-phone}
-    margin: 1.2em 0
+  margin: 3vh 0
+  @media #{$is-mobile}
+    margin: 2.5vh 0
 
 h4
-  margin: 1.3em 0
-  @media #{$is-phone}
-    margin: 1.1em 0
+  margin: 2vh 0
+  @media #{$is-mobile}
+    margin: 2vh 0
 
 h5, h6
-  margin: 1.2em 0
-  @media #{$is-phone}
-    margin: 1em 0
+  margin: 1.75vh 0
+  @media #{$is-mobile}
+    margin: 1.75vh 0
+
+hr
+  margin: 2rem 0
 
 footer
   display: grid
-  margin: 1em 1.3em
+  margin: 1vh 1.3vh
+  align-content: end

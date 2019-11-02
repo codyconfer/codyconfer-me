@@ -2,7 +2,7 @@
   <main class="container">
     <Header></Header>
     <Nav></Nav>
-    <section class="content" v-html="loremIpsum"></section>
+    <section class="content" v-html="resume"></section>
     <Footer></Footer>
   </main>
 </template>
@@ -11,11 +11,13 @@
 import Header from '~/components/Header.vue'
 import Nav from '~/components/Nav.vue'
 import Footer from '~/components/Footer.vue'
-import LoremIpsum from '~/blog/LoremIpsum.md'
+import LoremIpsum from '~/components/blog/LoremIpsum.md'
+import Resume from '~/components/markdown-pages/Resume.md'
 
 export default {
   components: {
     LoremIpsum,
+    Resume,
     Header,
     Nav,
     Footer
@@ -23,6 +25,9 @@ export default {
   computed: {
       loremIpsum() {
         return LoremIpsum;
+      },
+      resume() {
+        return Resume;
       }
     }
 }
