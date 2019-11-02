@@ -38,26 +38,33 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-$header-font: 'Share Tech Mono'
-
-header
-  margin: 50px 0 0 0
-
+<style lang="sass">
 .site-header-text
-  font-family: $header-font, monospace;
   display: grid
-  grid-template-columns: auto auto
   align-items: center
+  grid-template-columns: auto auto auto
   justify-content: left
+  @media #{$is-phone}
+    grid-template-columns: auto
+
+.site-header-title-container
+  display: grid
+  justify-content: left
+  grid-template-columns: auto auto
+  @media #{$is-phone}
+    grid-template-columns: auto
+    margin-left: -5px
+
+.site-header-location-container
+  display: grid
+  grid-template-columns: auto auto auto
+  @media #{$is-phone}
+    display: none
+    visibility: none
+
+.site-header-first
 
 .site-heading-cursor
   font-size: 0.8em
-  margin-bottom: 5px
-
-.site-header-row-2
-  display: grid
-  grid-template-columns: 1em auto
-  align-items: center
-  justify-content: left
+  margin: auto 10px 8px 10px
 </style>
