@@ -16,7 +16,13 @@ export default {
   },
   loading: { color: '#fff' },
   css: [
-    { src: '~/node_modules/highlight.js/styles/dracula.css', lang: 'css' }
+    { src: '~/node_modules/highlight.js/styles/dracula.css', lang: 'css' },
+    { src: '~/assets/styles/responsive-breaks.sass', lang: 'sass' },
+    { src: '~/assets/styles/fonts.sass', lang: 'sass' },
+    { src: '~/assets/styles/colors.sass', lang: 'sass' },
+    { src: '~/assets/styles/layout.sass', lang: 'sass' },
+    { src: '~/assets/styles/fonts-styles.sass', lang: 'sass' },
+    { src: '~/assets/styles/colors-styles.sass', lang: 'sass' },
   ],
   plugins: [
     '~/plugins/vue-rx',
@@ -28,7 +34,15 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    sass: [
+        './assets/styles/fonts-styles.sass',
+        './assets/styles/colors-styles.sass',
+        './assets/styles/responsive-breaks.sass'
+    ]
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
