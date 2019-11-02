@@ -1,0 +1,82 @@
+@import 'responsive-breaks.sass'
+
+header
+  margin: 50px 0 0 0
+  grid-template-row: auto
+  grid-template-columns: minmax(0, 1280px)
+
+.site-header-content
+  width: minmax(750px, 1280px)
+
+.nav-link
+  padding: 10px 40px 10px 0
+  @media #{$is-phone}
+    padding: 30px 50px 30px 0
+
+main
+  margin: 0 auto
+  min-height: 100vh
+  display: grid
+  grid-template-rows: 150px auto auto
+  grid-template-columns: minmax(0, 1280px)
+  justify-content: center
+  align-items: center
+  text-align: left
+  @media #{$is-phone}
+    grid-template-rows: 125px auto auto
+
+.container
+  margin: 0 auto
+  display: grid
+  justify-content: left
+  text-align: left
+  max-width: 1280px
+
+.hide
+  display: none
+  visibility: hidden
+
+.hide-mobile
+  @media #{$is-phone}
+    display: none
+    visibility: hidden
+
+blockquote
+  max-width: 100%
+  margin: 1rem
+  padding: 1rem
+  @media #{$is-phone}
+    margin: 0.5rem
+    padding: 0.5rem
+
+pre code
+  display: block
+  margin: 3rem
+  padding: 1.2rem
+  @media #{$is-phone}
+    margin: 0.5rem 0
+    padding: 0.5rem
+
+h1 
+  margin: 1.6rem 0
+  @media #{$is-phone}
+    margin: 1.2rem 0
+
+h2
+  margin: 1.6rem 0
+  @media #{$is-phone}
+    margin: 1.2rem 0
+
+h3
+  margin: 1.4rem 0
+  @media #{$is-phone}
+    margin: 1.2rem 0
+
+h4
+  margin: 1.2rem 0
+
+h5
+  margin: 1rem 0
+
+h6
+  margin: 1rem 0

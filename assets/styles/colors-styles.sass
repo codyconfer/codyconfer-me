@@ -1,0 +1,22 @@
+@import 'colors.sass'
+  
+html, body
+  background: $main-background
+  color: $main-foreground
+
+a, .nav-link
+  color: $main-foreground-highlight
+  &:hover
+    color: $main-foreground-active
+  &.active
+    color: $main-foreground-active
+
+.site-header-highlight
+  color: $main-foreground-highlight 
+
+.site-heading-cursor
+  color: $main-cursor-color
+
+pre code
+  background-color: $main-background-highlight
+  color: $main-foreground
