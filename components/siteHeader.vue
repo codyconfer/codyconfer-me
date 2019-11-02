@@ -1,12 +1,31 @@
 <template>
   <header>
-      <section>
+      <section class="site-header-content">
         <h1 class="site-header-text">
-          <span class="site-header-highlight">codyconfer@codyconfer.me</span>
-          :~
-          <span class="site-header-row-2">
-            <span class="site-header-highlight">$</span>
-            <span class="site-heading-cursor" v-bind:class="{ 'hide': hideCursor }">&#9608;</span>
+          <span class="site-header-highlight site-header-title-container">
+            <span class="hide-mobile">
+              cody@
+            </span>
+            <span class="site-header-title">
+              codyconfer.me
+            </span>
+          </span>
+          <span class="site-header-location-container hide-mobile">
+            <span class="site-header-separator">
+              :
+            </span>
+            <span class="site-header-location">
+              {{location}}
+            </span>
+            <span class="site-header-highlight">
+              $
+            </span>
+          </span>
+          <span class="site-header-command hide hide-mobile">
+            cd blog
+          </span>
+          <span class="site-heading-cursor hide-mobile" v-bind:class="{ 'hide': hideCursor }">
+            &#9608;
           </span>
         </h1>
       </section>
@@ -22,6 +41,7 @@ export default {
   data: function() {
       return {
         hideCursor: true,
+        location: "~"
       }
   },
   methods: {
