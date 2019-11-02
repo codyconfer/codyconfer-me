@@ -1,3 +1,3 @@
-# codyconfer-me
+# codyconfer.me
 
-//TODO: this
+A personal portfolio site written with Nuxt and Vue.
