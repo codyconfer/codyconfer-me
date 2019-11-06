@@ -31,4 +31,8 @@ export default {
   font-size: 1.5rem
   margin: 0 0.25rem
   cursor: pointer
+
+.nav-container
+  @media #{$is-mobile}
+    text-align: center
 </style>

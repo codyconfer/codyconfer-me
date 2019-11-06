@@ -7,12 +7,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { name: 'theme-color', content: '#283243' },
-      { name: 'msapplication-navbutton-color', content: '#283243' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: '#283243' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Quicksand|Roboto+Mono|Titillium+Web|Share+Tech+Mono&display=swap" rel="stylesheet' },
     ],
@@ -53,9 +50,11 @@ export default {
   axios: {
   },
   markdownit: {
-    injected: true,
+    injected: false,
     use: [
       'markdown-it-highlightjs',
+      'markdown-it-div',
+      'markdown-it-attrs',
     ],
   },
   build: {
