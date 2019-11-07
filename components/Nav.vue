@@ -60,6 +60,7 @@ export default {
     align-content: center
 
 .nav-item
+  margin: 0 4vh 0 0
   @media #{$is-mobile}
     margin: 3vh 0 0 0
     width: 100%
