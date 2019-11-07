@@ -74,6 +74,7 @@ export default {
   align-items: center
   justify-content: center
   grid-template-columns: auto auto
+  cursor: pointer
 
 .site-header-location-container
   display: grid
