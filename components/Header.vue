@@ -65,11 +65,14 @@ export default {
   grid-template-columns: auto auto auto
   justify-content: left
   @media #{$is-mobile}
+    align-content: center
+    justify-content: center
     grid-template-columns: auto
 
 .site-header-title-container
   display: grid
   align-items: center
+  justify-content: center
   grid-template-columns: auto auto
 
 .site-header-location-container
