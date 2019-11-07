@@ -1,7 +1,11 @@
 <template>
   <nav>
-      <div class="mobile-nav-collapse hide-desktop" v-on:click="toggleNav">{{navCollapse}}</div>
-      <b-nav class="nav-container" v-bind:class="{ 'hide-mobile': hideNav }">
+      <div class="mobile-nav-collapse hide-desktop" v-bind:class="{ 'zero-deg': hideNav, 'inverted': !hideNav }" v-on:click="toggleNav">
+        <div class="arrow-down">
+          <div class="arrow-down small"></div>
+        </div>
+      </div>
+      <b-nav class="nav-container" v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }">
         <b-nav-item active>home</b-nav-item>
         <b-nav-item href="https://github.codyconfer.me/">github</b-nav-item>
         <b-nav-item href="https://linkedin.codyconfer.me/">linkedin</b-nav-item>
@@ -14,13 +18,11 @@ export default {
   data: function() {
       return {
         hideNav: true,
-        navCollapse: '+'
       }
   },
   methods: {
     toggleNav: function() {
       this.hideNav = !this.hideNav;
-      this.navCollapse = this.hideNav ? '+' : '-';
     }
   },
 }
@@ -28,9 +30,26 @@ export default {
 
 <style lang="sass">
 .mobile-nav-collapse
-  font-size: 1.5rem
-  margin: 0.5rem 0.25rem
   cursor: pointer
+  width: 100%
+  display: grid
+  justify-content: center
+  align-content: center
+
+.arrow-down
+  width: 0
+  height: 0
+  border-left: 16px solid transparent
+  border-right: 16px solid transparent
+  border-top: 16px solid #f00
+  display: grid
+  justify-content: center
+  align-content: center
+  .small
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 8px solid purple
+    margin: 0 0 18px 0
 
 .nav-container
   @media #{$is-mobile}
