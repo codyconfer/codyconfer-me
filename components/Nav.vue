@@ -7,8 +7,8 @@
       </div>
       <b-nav class="nav-container" v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }">
         <b-nav-item active>home</b-nav-item>
-        <b-nav-item href="https://github.codyconfer.me/">github</b-nav-item>
-        <b-nav-item href="https://linkedin.codyconfer.me/">linkedin</b-nav-item>
+        <b-nav-item href="https://github.codyconfer.me/" target="_blank">github</b-nav-item>
+        <b-nav-item href="https://linkedin.codyconfer.me/" target="_blank">linkedin</b-nav-item>
       </b-nav>
     </nav>
 </template>
@@ -41,14 +41,14 @@ export default {
   height: 0
   border-left: 16px solid transparent
   border-right: 16px solid transparent
-  border-top: 16px solid #f00
+  border-top: 16px solid $main-background-highlight
   display: grid
   justify-content: center
   align-content: center
   .small
     border-left: 8px solid transparent
     border-right: 8px solid transparent
-    border-top: 8px solid purple
+    border-top: 8px solid $main-background
     margin: 0 0 18px 0
 
 .nav-container
