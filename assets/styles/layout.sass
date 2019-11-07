@@ -4,7 +4,7 @@ html, body
   min-height: 100vh;
 
 header
-  margin: 1rem 0 0 0
+  margin: 1em 0 0 0
   grid-template-row: auto
 
 nav
@@ -40,15 +40,17 @@ main
 .container
   margin: 0 auto
   display: grid
+  grid-template-rows: auto auto auto auto
   justify-content: left
   align-items: start
   text-align: left
   max-width: 1280px
 
 .content
-  margin: 2rem 0
+  margin: 2rem 0 0 0
   @media #{$is-mobile}
     margin: 0
+
 .hide
   display: none
   visibility: hidden
@@ -139,5 +141,5 @@ hr
 
 footer
   display: grid
-  margin: 5rem 0
+  margin: 4em 0 1em 0
   align-content: end
