@@ -34,5 +34,18 @@ export default {
 
 .nav-container
   @media #{$is-mobile}
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
     text-align: center
+    justify-content: center
+    align-content: center
+
+.nav-item
+  @media #{$is-mobile}
+    margin: 3vh 0 0 0
+    width: 100%
+
+.nav-link
+  padding: 0
+  margin: 0
 </style>
