@@ -219,6 +219,9 @@ export default {
       height: 48px
       width: 48px
       margin: 8px
+      @media #{$is-mobile}
+        height: 32px
+        width: 32px
 
 h1, h3
   margin-top: 3rem

@@ -29,7 +29,7 @@ export default {
 <style lang="sass">
 .mobile-nav-collapse
   font-size: 1.5rem
-  margin: 0 0.25rem
+  margin: 0.5rem 0.25rem
   cursor: pointer
 
 .nav-container
