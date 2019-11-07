@@ -23,6 +23,7 @@ export default {
     { src: '~/assets/styles/layout.sass', lang: 'sass' },
     { src: '~/assets/styles/fonts-styles.sass', lang: 'sass' },
     { src: '~/assets/styles/colors-styles.sass', lang: 'sass' },
+    { src: '~/assets/styles/animations.sass', lang: 'sass' },
   ],
   plugins: [
     '~/plugins/vue-rx',

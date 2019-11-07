@@ -29,26 +29,32 @@ export default {
 </script>
 
 <style lang="sass">
+nav
+  @media #{$is-mobile}
+    background: $main-background-highlight
+
 .mobile-nav-collapse
   cursor: pointer
   width: 100%
   display: grid
   justify-content: center
   align-content: center
+  @media #{$is-mobile}
+    margin: 10px 0 0 0
 
 .arrow-down
   width: 0
   height: 0
   border-left: 16px solid transparent
   border-right: 16px solid transparent
-  border-top: 16px solid $main-background-highlight
+  border-top: 16px solid $main-background
   display: grid
   justify-content: center
   align-content: center
   .small
     border-left: 8px solid transparent
     border-right: 8px solid transparent
-    border-top: 8px solid $main-background
+    border-top: 8px solid $main-background-highlight
     margin: 0 0 18px 0
 
 .nav-container
@@ -58,6 +64,7 @@ export default {
     text-align: center
     justify-content: center
     align-content: center
+    margin: 0 0 10px 0
 
 .nav-item
   margin: 0 4vh 0 0
