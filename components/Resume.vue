@@ -26,24 +26,24 @@ Software development focused on Microsoft technologies including .NET Core, C#, 
 ### Skills
 
 ::: .skills-grid
-![c sharp](/skills/csharp.png)
-![dot net](/skills/dotnet.png)
-![visual studio](/skills/visualstudio.png)
-![dev ops](/skills/devops.png)
-![pipelines](/skills/pipelines.png)
-![azure](/skills/azure.png)
-![functions](/skills/functions.png)
-![api management](/skills/apimanagement.png)
-![signalr](/skills/signalr.svg)
-![typescript](/skills/ts.png)
-![vue](/skills/vue.png)
-![nuxt](/skills/nuxt-square-white.svg)
-![reactive extensions](/skills/rx.png)
-![angular](/skills/angular.png)
-![ionic](/skills/ionic.png)
-![redis](/skills/redis.png)
-![mqtt](/skills/mqtt.png)
-![aws](/skills/aws.png)
+<a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">![c sharp](/skills/csharp.png)</a>
+<a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/core/">![dot net](/skills/dotnet.png)</a>
+<a target="_blank" href="https://visualstudio.microsoft.com/">![visual studio](/skills/visualstudio.png)</a>
+<a target="_blank" href="https://azure.microsoft.com/en-us/services/devops/">![dev ops](/skills/devops.png)</a>
+<a target="_blank" href="https://azure.microsoft.com/en-us/services/devops/pipelines/">![pipelines](/skills/pipelines.png)</a>
+<a target="_blank" href="https://docs.microsoft.com/en-us/azure/">![azure](/skills/azure.png)</a>
+<a target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/">![functions](/skills/functions.png)</a>
+<a target="_blank" href="https://azure.microsoft.com/en-us/services/api-management/">![api management](/skills/apimanagement.png)</a>
+<a target="_blank" href="https://docs.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr">![signalr](/skills/signalr.svg)</a>
+<a target="_blank" href="https://www.typescriptlang.org/docs/home.html">![typescript](/skills/ts.png)</a>
+<a target="_blank" href="https://vuejs.org/v2/guide/">![vue](/skills/vue.png)</a>
+<a target="_blank" href="https://nuxtjs.org/guide">![nuxt](/skills/nuxt-square-white.svg)</a>
+<a target="_blank" href="http://reactivex.io/intro.html">![reactive extensions](/skills/rx.png)</a>
+<a target="_blank" href="https://angular.io/docs">![angular](/skills/angular.png)</a>
+<a target="_blank" href="https://ionicframework.com/docs/intro">![ionic](/skills/ionic.png)</a>
+<a target="_blank" href="https://redis.io/topics/introduction">![redis](/skills/redis.png)</a>
+<a target="_blank" href="https://mqtt.org/">![mqtt](/skills/mqtt.png)</a>
+<a target="_blank" href="https://aws.amazon.com/">![aws](/skills/aws.png)</a>
 :::
 :::
 
