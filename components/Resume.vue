@@ -210,7 +210,7 @@ export default {
     a
       display: grid
       align-content: center
-      height: 55px
+      height: 50px
 
 
 .skills-grid
@@ -234,7 +234,7 @@ export default {
         height: 32px
         width: 32px
 
-h1, h3
+h3
   margin-top: 1em
 
 h6
