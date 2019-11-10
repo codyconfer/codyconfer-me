@@ -40,7 +40,7 @@ export default {
   justify-content: center
   align-content: center
   @media #{$is-mobile}
-    margin: 10px 0 0 0
+    height: 50px
 
 .arrow-down
   width: 0
