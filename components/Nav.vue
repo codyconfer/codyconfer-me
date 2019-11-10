@@ -29,9 +29,9 @@ export default {
 </script>
 
 <style lang="sass">
-nav
+.nav, .nav-container, .show-mobile-animated
   @media #{$is-mobile}
-    background: $main-background-highlight
+    border-bottom: 1px solid white
 
 .mobile-nav-collapse
   cursor: pointer
@@ -47,14 +47,14 @@ nav
   height: 0
   border-left: 16px solid transparent
   border-right: 16px solid transparent
-  border-top: 16px solid $main-background
+  border-top: 16px solid
   display: grid
   justify-content: center
   align-content: center
   .small
     border-left: 8px solid transparent
     border-right: 8px solid transparent
-    border-top: 8px solid $main-background-highlight
+    border-top: 8px solid
     margin: 0 0 18px 0
 
 .nav-container
@@ -69,7 +69,7 @@ nav
 .nav-item
   margin: 0 4vh 0 0
   @media #{$is-mobile}
-    margin: 3vh 0 0 0
+    margin: 5vh 0
     width: 100%
 
 .nav-link
