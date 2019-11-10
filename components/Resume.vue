@@ -7,10 +7,10 @@ Software Engineer
 Denver, Colorado
 :::
 ::: .contact
-[954-559-6261](tel:954-559-6261)  
-[mail@codyconfer.me](mailto:mail@codyconfer.me)  
-[codyconfer.me](https://codyconfer.me)  
-[linkedin.codyconfer.me](https://linkedin.codyconfer.me)  
+[954-559-6261](tel:954-559-6261)
+[mail@codyconfer.me](mailto:mail@codyconfer.me)
+[codyconfer.me](https://codyconfer.me)
+[linkedin.codyconfer.me](https://linkedin.codyconfer.me)
 [github.codyconfer.me](https://github.codyconfer.me)
 :::
 
@@ -202,6 +202,17 @@ export default {
     justify-content: center
     text-align: center
 
+
+.contact p
+  display: grid
+  grid-template-columns: 1fr
+  @media #{$is-mobile}
+    a
+      display: grid
+      align-content: center
+      height: 55px
+
+
 .skills-grid
   p
     img
@@ -224,13 +235,9 @@ export default {
         width: 32px
 
 h1, h3
-  margin-top: 3rem
+  margin-top: 1em
 
 h6
-  margin-top: 4rem
-  margin-bottom: 0.5rem
-
-h1 
-  margin-bottom: 1rem
-  
+  margin-top: 4em
+  margin-bottom: 0.5em
 </style>
