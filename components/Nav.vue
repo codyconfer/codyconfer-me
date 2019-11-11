@@ -10,6 +10,7 @@
         <b-nav-item href="https://github.codyconfer.me/" target="_blank">github</b-nav-item>
         <b-nav-item href="https://linkedin.codyconfer.me/" target="_blank">linkedin</b-nav-item>
       </b-nav>
+      <div class="hide-desktop nav-touch-collapse"></div>
     </nav>
 </template>
 
@@ -32,6 +33,13 @@ export default {
 .nav, .nav-container, .show-mobile-animated
   @media #{$is-mobile}
     border-bottom: 1px solid $main-foreground
+
+.nav-touch-collapse
+  background: rgba(155,155,155,0.2)
+  width: 100%
+  height: 35px
+  margin-top: -25px
+  z-index: 10
 
 .mobile-nav-collapse
   cursor: pointer

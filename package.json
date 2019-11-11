@@ -23,7 +23,8 @@
     "nuxt": "^2.0.0",
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.5.3",
-    "vue-rx": "^6.2.0"
+    "vue-rx": "^6.2.0",
+    "vue2-touch-events": "^2.0.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",
