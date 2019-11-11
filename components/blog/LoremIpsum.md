@@ -26,11 +26,13 @@ public static int CSquared(int a, int b) => a^2 + b^2;
 
 public static string SayHello() => "Hello";
 
+//This is a comment
 public static async Task DoWork()
 {
   using (var thing = new ThingyThing())
   {
     await thing.GetIt();
+    return;
   }
 }
 ```

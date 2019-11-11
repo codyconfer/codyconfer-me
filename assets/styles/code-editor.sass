@@ -1,0 +1,72 @@
+@import 'colors.sass'
+
+$code-background-color: $adapta-background-highlight;
+$code-foreground-color: $adapta-foreground
+$code-keyword-color: $adapta-purple
+$code-title-color: $adapta-green
+$code-number-color: $adapta-blue
+$code-string-color: $adapta-yellow
+$code-type-color: $adapta-orange
+$code-comment-color: $adapta-foreground-muted
+
+
+.hljs-title
+    color: $code-title-color
+
+.hljs
+  display: block
+  overflow-x: auto
+  padding: 0.5em
+  background: $code-background-color
+  color: $code-foreground-color
+
+.hljs-strong,
+.hljs-emphasis
+  color: $code-title-color
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-link,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal
+  color: $code-number-color
+
+.hljs-code,
+.hljs-selector-class
+  color: $code-title-color
+
+.hljs-emphasis
+  font-style: italic
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-attribute,
+.hljs-name,
+.hljs-variable
+  color: $code-keyword-color
+
+.hljs-params
+  color: $code-foreground-color
+
+.hljs-string
+  color: $code-string-color
+
+.hljs-subst,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-symbol,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-addition
+  color: $code-type-color
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta
+  color: $code-comment-color

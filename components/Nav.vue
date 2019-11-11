@@ -31,7 +31,7 @@ export default {
 <style lang="sass">
 .nav, .nav-container, .show-mobile-animated
   @media #{$is-mobile}
-    border-bottom: 1px solid white
+    border-bottom: 1px solid $main-foreground
 
 .mobile-nav-collapse
   cursor: pointer
