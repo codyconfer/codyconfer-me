@@ -16,7 +16,7 @@ export default {
   },
   loading: { color: '#1c2532' },
   css: [
-    { src: '~/node_modules/highlight.js/styles/dracula.css', lang: 'css' },
+    { src: '~/assets/styles/code-editor.sass', lang: 'sass' },
     { src: '~/assets/styles/responsive-breaks.sass', lang: 'sass' },
     { src: '~/assets/styles/fonts.sass', lang: 'sass' },
     { src: '~/assets/styles/colors.sass', lang: 'sass' },
