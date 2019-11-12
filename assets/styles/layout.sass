@@ -44,7 +44,14 @@ main
   justify-content: left
   align-items: start
   text-align: left
-  max-width: 1280px
+  @media #{$is-mobile}
+    max-width: 100vw
+  @media #{$is-tablet}
+    max-width: 900px
+  @media #{$is-desktop}
+    max-width: 1150px
+  @media #{$is-ultrawide}
+    max-width: 1280px
   section
     .content
       min-height: 67vh

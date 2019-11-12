@@ -199,12 +199,12 @@ export default {
 .heading
   border-bottom: $main-foreground-muted 1px solid
   p
-    margin: 7vh 0 7vh 0
+    margin: 3em 0 3em 0
 
 .contact p
   display: grid
   grid-template-columns: auto auto auto auto 1fr
-  margin: 7vh 0 5vh 0
+  margin: 3em 0 3em 0
   .fa-resume
     margin-right: 5px
   @media #{$is-tablet}
@@ -225,16 +225,14 @@ export default {
       font-size: 1.75rem
       span
         display: none
-        
 
 .skills
   p  
-    margin: 5vh 0 5vh 0
+    margin: 3em 0 3em 0
   .summary
     p
-      margin: 5vh 0 2vh 0
+      margin: 3em 0 1em 0
     
-
 .skills-grid
   p
     margin: 3vh 0 0 0
@@ -262,7 +260,7 @@ export default {
     display: grid
     grid-template-columns: auto 1fr
     align-content: center
-    height: 4vh
+    height: 3em
     .icon
       display: grid
       align-content: center
