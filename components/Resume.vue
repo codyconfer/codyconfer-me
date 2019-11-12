@@ -9,11 +9,11 @@
 :::
 
 ::: .contact
-[<i class="fa-resume scale-up fa fa-mobile"></i><span>954-559-6261</span>](tel:954-559-6261)
-[<i class="fa-resume scale-down fa fa-envelope"></i><span>mail@codyconfer.me</span>](mailto:mail@codyconfer.me)
-<span class="hide-mobile">[<i class="fa-resume fa fa-globe"></i><span>codyconfer.me</span>](https://codyconfer.me)</span>
-[<i class="fa-resume fa fa-linkedin"></i><span>linkedin</span>](https://linkedin.codyconfer.me)
-[<i class="fa-resume fa fa-github"></i><span>github</span>](https://github.codyconfer.me)
+<a target="_blank" href="tel:+1-954-559-6261"><i class="fa-resume scale-up fa fa-mobile"></i><span>954-559-6261</span></a>
+<a target="_blank" href="mailto:mail@codyconfer.me"><i class="fa-resume scale-down fa fa-envelope"></i><span>mail@codyconfer.me</span></a>
+<span class="hide-mobile"><a target="_blank" href="https://codyconfer.me"><i class="fa-resume fa fa-globe"></i><span>codyconfer.me</span></a></span>
+<a target="_blank" href="https://linkedin.codyconfer.me"><i class="fa-resume fa fa-linkedin"></i><span>linkedin</span></a>
+<a target="_blank" href="https://github.codyconfer.me"><i class="fa-resume fa fa-github"></i><span>github</span></a>
 :::
 :::
 
@@ -262,6 +262,7 @@ export default {
     display: grid
     grid-template-columns: auto 1fr
     align-content: center
+    height: 4vh
     .icon
       display: grid
       align-content: center
