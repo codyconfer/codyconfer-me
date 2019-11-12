@@ -27,6 +27,7 @@ export default {
   ],
   plugins: [
     '~/plugins/vue-rx',
+    '~/plugins/vue2-touch-events',
   ],
   buildModules: [
   ],
@@ -35,7 +36,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/font-awesome',
   ],
   styleResources: {
     sass: [
