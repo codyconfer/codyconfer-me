@@ -65,9 +65,9 @@ export default {
     margin: 0 0 10px 0
 
 .nav-item
-  margin: 0 4vh 0 0
+  margin: 0 2em 0 0
   @media #{$is-mobile}
-    margin: 5vh 0
+    margin: 2em 0
     width: 100%
 
 .nav-link
