@@ -27,7 +27,6 @@ export default {
   ],
   plugins: [
     '~/plugins/vue-rx',
-    '~/plugins/vue2-touch-events',
   ],
   buildModules: [
   ],

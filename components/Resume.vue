@@ -9,19 +9,18 @@
 :::
 
 ::: .contact
-[<i class="fa-resume fa fa-mobile"></i> 954-559-6261](tel:954-559-6261)
-[<i class="fa-resume fa fa-envelope"></i> mail@codyconfer.me](mailto:mail@codyconfer.me)
-[<i class="fa-resume fa fa-globe"></i> codyconfer.me](https://codyconfer.me)
-[<i class="fa-resume fa fa-linkedin"></i> linkedin](https://linkedin.codyconfer.me)
-[<i class="fa-resume fa fa-github"></i> github](https://github.codyconfer.me)
-:::
-
-::: .summary
-Software development focused on Microsoft technologies including .NET Core, C#, TypeScript and Azure.
+[<i class="fa-resume scale-up fa fa-mobile"></i><span>954-559-6261</span>](tel:954-559-6261)
+[<i class="fa-resume scale-down fa fa-envelope"></i><span>mail@codyconfer.me</span>](mailto:mail@codyconfer.me)
+<span class="hide-mobile">[<i class="fa-resume fa fa-globe"></i><span>codyconfer.me</span>](https://codyconfer.me)</span>
+[<i class="fa-resume fa fa-linkedin"></i><span>linkedin</span>](https://linkedin.codyconfer.me)
+[<i class="fa-resume fa fa-github"></i><span>github</span>](https://github.codyconfer.me)
 :::
 :::
 
 ::: .skills
+::: .summary
+Software development focused on Microsoft technologies including .NET Core, C#, TypeScript and Azure.
+:::
 ::: .skills-grid
 <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">![c sharp](/skills/csharp.png)</a>
 <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/core/">![dot net](/skills/dotnet.png)</a>
@@ -198,26 +197,47 @@ export default {
     text-align: center
 
 .heading
+  border-bottom: $main-foreground-muted 1px solid
   p
-    margin: 2vh 0 2vh 0
+    margin: 7vh 0 7vh 0
 
 .contact p
   display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-  margin: 4vh 0 4vh 0
+  grid-template-columns: auto auto auto auto 1fr
+  margin: 7vh 0 5vh 0
   .fa-resume
     margin-right: 5px
-  @media #{$is-mobile}
-    grid-template-columns: 1fr
+  @media #{$is-tablet}
     a
-      display: grid
-      align-content: center
-      height: 50px
+      margin-right: 25px
+  @media #{$is-desktop}
+    a
+      margin-right: 35px
+  @media #{$is-mobile}
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    a .scale-down
+      font-size: 1.5rem
+    a .scale-up
+      font-size: 2rem
+    a
+      height: 5vh
+      margin: 0
+      font-size: 1.75rem
+      span
+        display: none
+        
 
+.skills
+  p  
+    margin: 5vh 0 5vh 0
+  .summary
+    p
+      margin: 5vh 0 2vh 0
+    
 
 .skills-grid
   p
-    margin: 4vh 0 0 0
+    margin: 3vh 0 0 0
     img
       height: 64px
       width: 64px
@@ -242,7 +262,6 @@ export default {
     display: grid
     grid-template-columns: auto 1fr
     align-content: center
-    height: 20px
     .icon
       display: grid
       align-content: center
@@ -251,4 +270,9 @@ export default {
       margin: 0
     .fa-resume
       margin-right: 8px
+    @media #{$is-mobile}
+      justify-content: center
+      grid-template-columns: auto auto
+      span
+        text-align: left
 </style>
