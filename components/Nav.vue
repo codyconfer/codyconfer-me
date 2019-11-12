@@ -7,8 +7,6 @@
       </div>
       <b-nav class="nav-container" v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }">
         <b-nav-item active>home</b-nav-item>
-        <b-nav-item href="https://github.codyconfer.me/" target="_blank">github</b-nav-item>
-        <b-nav-item href="https://linkedin.codyconfer.me/" target="_blank">linkedin</b-nav-item>
       </b-nav>
     </nav>
 </template>
