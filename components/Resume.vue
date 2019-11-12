@@ -3,28 +3,24 @@
 ::: .heading
 # Cody Confer
 
-Software Engineer  
-Denver, Colorado
+::: .info
+<span class="icon"><i class="fa-resume fa fa-user-circle"></i></span><span>Software Engineer</span>
+<span class="icon"><i class="fa-resume fa fa-map-marker"></i></span><span>Denver, Colorado</span>
 :::
+
 ::: .contact
-[954-559-6261](tel:954-559-6261)
-[mail@codyconfer.me](mailto:mail@codyconfer.me)
-[codyconfer.me](https://codyconfer.me)
-[linkedin.codyconfer.me](https://linkedin.codyconfer.me)
-[github.codyconfer.me](https://github.codyconfer.me)
+[<i class="fa-resume scale-up fa fa-mobile"></i><span>954-559-6261</span>](tel:954-559-6261)
+[<i class="fa-resume scale-down fa fa-envelope"></i><span>mail@codyconfer.me</span>](mailto:mail@codyconfer.me)
+<span class="hide-mobile">[<i class="fa-resume fa fa-globe"></i><span>codyconfer.me</span>](https://codyconfer.me)</span>
+[<i class="fa-resume fa fa-linkedin"></i><span>linkedin</span>](https://linkedin.codyconfer.me)
+[<i class="fa-resume fa fa-github"></i><span>github</span>](https://github.codyconfer.me)
 :::
-
----
-
-::: .summary
-### Summary
-
-Software development focused on Microsoft technologies including .NET Core, C#, TypeScript and Azure.
 :::
 
 ::: .skills
-### Skills
-
+::: .summary
+Software development focused on Microsoft technologies including .NET Core, C#, TypeScript and Azure.
+:::
 ::: .skills-grid
 <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">![c sharp](/skills/csharp.png)</a>
 <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/core/">![dot net](/skills/dotnet.png)</a>
@@ -47,10 +43,9 @@ Software development focused on Microsoft technologies including .NET Core, C#, 
 :::
 :::
 
----
-
+::: .resume-collapse .hide
 ::: .experience
-### Experience
+### Work History
 
 ::: .experience-entry
 ###### Frontier Airlines
@@ -172,8 +167,6 @@ Web Development using WordPress, PHP, and JavaScript.
 ::: 
 :::
 
----
-
 ::: .education
 ### Education 
 
@@ -185,6 +178,7 @@ Web Development using WordPress, PHP, and JavaScript.
 ###### Charles W Flanagan High School  
 
 `High School Diploma`
+:::
 :::
 :::
 </template>
@@ -202,22 +196,51 @@ export default {
     justify-content: center
     text-align: center
 
+.heading
+  border-bottom: $main-foreground-muted 1px solid
+  p
+    margin: 7vh 0 7vh 0
 
 .contact p
   display: grid
-  grid-template-columns: 1fr
-  @media #{$is-mobile}
+  grid-template-columns: auto auto auto auto 1fr
+  margin: 7vh 0 5vh 0
+  .fa-resume
+    margin-right: 5px
+  @media #{$is-tablet}
     a
-      display: grid
-      align-content: center
-      height: 50px
+      margin-right: 25px
+  @media #{$is-desktop}
+    a
+      margin-right: 35px
+  @media #{$is-mobile}
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    a .scale-down
+      font-size: 1.5rem
+    a .scale-up
+      font-size: 2rem
+    a
+      height: 5vh
+      margin: 0
+      font-size: 1.75rem
+      span
+        display: none
+        
 
+.skills
+  p  
+    margin: 5vh 0 5vh 0
+  .summary
+    p
+      margin: 5vh 0 2vh 0
+    
 
 .skills-grid
   p
+    margin: 3vh 0 0 0
     img
-      height: 96px
-      width: 96px
+      height: 64px
+      width: 64px
       margin: 16px
       @media #{$is-mobile}
         height: 64px
@@ -234,10 +257,22 @@ export default {
         height: 32px
         width: 32px
 
-h3
-  margin-top: 1em
-
-h6
-  margin-top: 4em
-  margin-bottom: 0.5em
+.info
+  p
+    display: grid
+    grid-template-columns: auto 1fr
+    align-content: center
+    .icon
+      display: grid
+      align-content: center
+      justify-content: center
+    span 
+      margin: 0
+    .fa-resume
+      margin-right: 8px
+    @media #{$is-mobile}
+      justify-content: center
+      grid-template-columns: auto auto
+      span
+        text-align: left
 </style>
