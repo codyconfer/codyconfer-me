@@ -236,14 +236,17 @@ export default {
 .skills-grid
   p
     margin: 3vh 0 0 0
+    @media #{$is-mobile}
+      display: grid
+      grid-template-columns: auto auto auto
     img
       height: 64px
       width: 64px
-      margin: 16px
+      margin: 32px
       @media #{$is-mobile}
         height: 64px
         width: 64px
-        margin: 16px
+        margin: 16px 0 16px 0
 
 .experience-skills-grid
   p
