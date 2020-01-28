@@ -1,13 +1,13 @@
 <template>
-    <Resume></Resume>
+    <HomeContent></HomeContent>
 </template>
 
 <script>
-import Resume from '~/components/Resume.vue'
+import HomeContent from '~/components/HomeContent.vue'
 
 export default {
   components: {
-    Resume,
+    HomeContent,
   },
 }
 </script>
