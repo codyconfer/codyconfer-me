@@ -11,6 +11,7 @@
 ::: .contact
 <a target="_blank" href="mailto:mail@codyconfer.me"><i class="fa-resume scale-down fa fa-envelope"></i><span>mail@codyconfer.me</span></a>
 <span class="hide-mobile"><a target="_blank" href="https://codyconfer.me"><i class="fa-resume fa fa-globe"></i><span>codyconfer.me</span></a></span>
+<a target="_blank" href="https://twitter.codyconfer.me"><i class="fa-resume fa fa-twitter"></i><span>twitter</span></a>
 <a target="_blank" href="https://linkedin.codyconfer.me"><i class="fa-resume fa fa-linkedin"></i><span>linkedin</span></a>
 <a target="_blank" href="https://github.codyconfer.me"><i class="fa-resume fa fa-github"></i><span>github</span></a>
 :::
