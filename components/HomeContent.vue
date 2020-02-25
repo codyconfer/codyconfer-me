@@ -42,7 +42,7 @@ Full stack solutions engineering with a focus on Microsoft Technologies: C#, .NE
 :::
 </template>
 
-<script>
+<script lang="ts">
 export default {}
 </script>
 

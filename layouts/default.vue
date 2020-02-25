@@ -11,7 +11,7 @@
     Nav,
     Footer
 
-<script>
+<script lang="ts">
 import Header from '~/components/Header.vue'
 import Nav from '~/components/Nav.vue'
 import Footer from '~/components/Footer.vue'
