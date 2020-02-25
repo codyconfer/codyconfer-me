@@ -1,18 +1,18 @@
 <template>
-    <section class="content" v-html="loremIpsum"></section>
+  <section class="content" v-html="loremIpsum"></section>
 </template>
 
 <script>
 import LoremIpsum from '~/components/blog/LoremIpsum.md'
 
 export default {
-  components: {
-    LoremIpsum,
-  },
-  computed: {
-      loremIpsum() {
-        return LoremIpsum;
-      },
+    components: {
+        LoremIpsum
+    },
+    computed: {
+        loremIpsum() {
+            return LoremIpsum
+        }
     }
 }
 </script>

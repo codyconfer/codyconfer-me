@@ -1,13 +1,13 @@
 <template>
-    <HomeContent></HomeContent>
+  <HomeContent></HomeContent>
 </template>
 
 <script>
 import HomeContent from '~/components/HomeContent.vue'
 
 export default {
-  components: {
-    HomeContent,
-  },
+    components: {
+        HomeContent
+    }
 }
 </script>

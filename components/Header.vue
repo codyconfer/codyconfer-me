@@ -1,61 +1,49 @@
 <template>
   <header>
-      <section class="site-header-content">
-        <h1 class="site-header-text">
-          <span class="site-header-highlight site-header-title-container">
-            <span class="hide-mobile">
-              cody@
-            </span>
-            <span class="site-header-title-container">
-              <span class="hide-desktop mobile-header-carrot">></span>
-              <span class="site-header-title">codyconfer.me</span>
-            </span>
+    <section class="site-header-content">
+      <h1 class="site-header-text">
+        <span class="site-header-highlight site-header-title-container">
+          <span class="hide-mobile">cody@</span>
+          <span class="site-header-title-container">
+            <span class="hide-desktop mobile-header-carrot">></span>
+            <span class="site-header-title">codyconfer.me</span>
           </span>
-          <span class="site-header-location-container hide-mobile">
-            <span class="site-header-separator">
-              :
-            </span>
-            <span class="site-header-location">
-              {{location}}
-            </span>
-            <span class="site-header-highlight">
-              $
-            </span>
-          </span>
-          <span class="site-header-command hide hide-mobile">
-            cd blog
-          </span>
-          <span class="site-heading-cursor hide-mobile" v-bind:class="{ 'hide': hideCursor }">
-            &#9608;
-          </span>
-        </h1>
-      </section>
-    </header>
+        </span>
+        <span class="site-header-location-container hide-mobile">
+          <span class="site-header-separator">:</span>
+          <span class="site-header-location">{{location}}</span>
+          <span class="site-header-highlight">$</span>
+        </span>
+        <span class="site-header-command hide hide-mobile">cd blog</span>
+        <span class="site-heading-cursor hide-mobile" v-bind:class="{ 'hide': hideCursor }">&#9608;</span>
+      </h1>
+    </section>
+  </header>
 </template>
 
 <script>
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Rx'
 
-const blinkCursor = Observable.interval(750);
+const blinkCursor = Observable.interval(750)
 
 export default {
-  data: function() {
-      return {
-        hideCursor: true,
-        location: "~"
-      }
-  },
-  methods: {
-    toggleHideCursor: function() {
-      this.hideCursor = !this.hideCursor;
+    data: function() {
+        return {
+            hideCursor: true,
+            location: '~'
+        }
+    },
+    methods: {
+        toggleHideCursor: function() {
+            this.hideCursor = !this.hideCursor
+        }
+    },
+    subscriptions: {
+        blinkCursor$: blinkCursor
+    },
+    mounted() {
+        this.$subscribeTo(blinkCursor, this.toggleHideCursor)
     }
-  },
-  subscriptions: {
-      blinkCursor$: blinkCursor
-  },
-  mounted() {
-    this.$subscribeTo(blinkCursor, this.toggleHideCursor)
-  }
 }
 </script>
 

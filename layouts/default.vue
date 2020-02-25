@@ -17,10 +17,10 @@ import Nav from '~/components/Nav.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
-  components: {
-    Header,
-    Nav,
-    Footer
-  },
+    components: {
+        Header,
+        Nav,
+        Footer
+    }
 }
 </script>
