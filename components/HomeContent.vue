@@ -1,8 +1,6 @@
 <template lang="md">
 ::: .content
 ::: .heading
-# Cody Confer
-
 ::: .info
 <span class="icon"><i class="fa-resume fa fa-user-circle"></i></span><span>Software Engineer</span>
 <span class="icon"><i class="fa-resume fa fa-map-marker"></i></span><span>Denver, Colorado</span>
