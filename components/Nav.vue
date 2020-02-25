@@ -13,7 +13,12 @@
       class="nav-container"
       v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }"
     >
-      <b-nav-item active>home</b-nav-item>
+      <b-nav-item active>~</b-nav-item>
+      <b-nav-item>blog</b-nav-item>
+      <b-nav-item>beer</b-nav-item>
+      <b-nav-item>food</b-nav-item>
+      <b-nav-item>meet</b-nav-item>
+      <b-nav-item>resume</b-nav-item>
     </b-nav>
   </nav>
 </template>

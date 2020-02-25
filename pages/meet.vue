@@ -6,14 +6,14 @@
 import LoremIpsum from '~/components/blog/LoremIpsum.md'
 
 export default {
-  components: {
-    LoremIpsum
-  },
-  computed: {
-    loremIpsum() {
-      return LoremIpsum
+    components: {
+        LoremIpsum
+    },
+    computed: {
+        loremIpsum() {
+            return LoremIpsum
+        }
     }
-  }
 }
 </script>
 
