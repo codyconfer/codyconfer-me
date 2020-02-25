@@ -2,7 +2,7 @@
   <section class="content" v-html="loremIpsum"></section>
 </template>
 
-<script>
+<script lang="ts">
 import LoremIpsum from '~/components/blog/LoremIpsum.md'
 
 export default {

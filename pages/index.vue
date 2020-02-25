@@ -2,7 +2,7 @@
   <HomeContent></HomeContent>
 </template>
 
-<script>
+<script lang="ts">
 import HomeContent from '~/components/HomeContent.vue'
 
 export default {

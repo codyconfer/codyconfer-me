@@ -20,7 +20,7 @@
   </header>
 </template>
 
-<script>
+<script lang="ts">
 import { Observable } from 'rxjs/Rx'
 
 const blinkCursor = Observable.interval(750)
