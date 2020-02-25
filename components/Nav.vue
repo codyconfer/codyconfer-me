@@ -13,12 +13,9 @@
       class="nav-container"
       v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }"
     >
-      <b-nav-item active>~</b-nav-item>
-      <b-nav-item>blog</b-nav-item>
-      <b-nav-item>beer</b-nav-item>
-      <b-nav-item>food</b-nav-item>
-      <b-nav-item>meet</b-nav-item>
-      <b-nav-item>resume</b-nav-item>
+      <nuxt-link class="nav-link nav-item" to="/">~</nuxt-link>
+      <nuxt-link class="nav-link nav-item" to="/contact">contact</nuxt-link>
+      <nuxt-link class="nav-link nav-item" to="/blog">blog</nuxt-link>
     </b-nav>
   </nav>
 </template>
@@ -84,5 +81,5 @@ export default {
 
 .nav-link
   padding: 0
-  margin: 0
+  margin: 2em 2em 2em 0
 </style>
