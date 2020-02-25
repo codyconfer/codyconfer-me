@@ -3,7 +3,6 @@
     <section class="site-header-content">
       <h1 class="site-header-text">
         <span class="site-header-highlight site-header-title-container">
-          <span class="hide-mobile">cody@</span>
           <span class="site-header-title-container">
             <span class="hide-desktop mobile-header-carrot">></span>
             <span class="site-header-title">codyconfer.me</span>
