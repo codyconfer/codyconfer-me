@@ -1,28 +1,35 @@
 <template>
   <nav>
-      <div class="mobile-nav-collapse hide-desktop" v-bind:class="{ 'zero-deg': hideNav, 'inverted': !hideNav }" v-on:click="toggleNav">
-        <div class="arrow-down">
-          <div class="arrow-down small"></div>
-        </div>
+    <div
+      class="mobile-nav-collapse hide-desktop"
+      v-bind:class="{ 'zero-deg': hideNav, 'inverted': !hideNav }"
+      v-on:click="toggleNav"
+    >
+      <div class="arrow-down">
+        <div class="arrow-down small"></div>
       </div>
-      <b-nav class="nav-container" v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }">
-        <b-nav-item active>home</b-nav-item>
-      </b-nav>
-    </nav>
+    </div>
+    <b-nav
+      class="nav-container"
+      v-bind:class="{ 'hide-mobile-animated': hideNav, 'show-mobile-animated': !hideNav }"
+    >
+      <b-nav-item active>home</b-nav-item>
+    </b-nav>
+  </nav>
 </template>
 
 <script>
 export default {
-  data: function() {
-      return {
-        hideNav: true,
-      }
-  },
-  methods: {
-    toggleNav: function() {
-      this.hideNav = !this.hideNav;
+    data: function() {
+        return {
+            hideNav: true
+        }
+    },
+    methods: {
+        toggleNav: function() {
+            this.hideNav = !this.hideNav
+        }
     }
-  },
 }
 </script>
 

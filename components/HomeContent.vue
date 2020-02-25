@@ -184,9 +184,7 @@ Web Development using WordPress, PHP, and JavaScript.
 </template>
 
 <script>
-export default {
-  
-}
+export default {}
 </script>
 
 <style lang="sass">
